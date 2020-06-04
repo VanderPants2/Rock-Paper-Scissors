@@ -1,0 +1,86 @@
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #24272e;
+  color: white;
+}
+header {
+  background-color: white;
+  padding: 20px;
+}
+header > h1 {
+  color: darkslategray;
+  text-align: center;
+  text-transform: capitalize;
+}
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  width: 200px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 40px;
+  position: relative;
+}
+
+.badge {
+  background-color: tomato;
+  font-size: 14px;
+  padding: 2px 10px;
+}
+
+#user {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#computer {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+.result {
+  font-size: 30px;
+}
+.result > p {
+  text-align: center;
+}
+.choices {
+  text-align: center;
+  margin: 40px 0px;
+}
+.choice {
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0px 10px;
+  transition: all 0.3s ease;
+}
+.choice:hover {
+  cursor: pointer;
+  background-color: darkslategray;
+}
+#action-message {
+  text-align: center;
+  font-size: 20px;
+}
+
+.win {
+  border: 4px solid lime;
+  box-shadow: 0 0 15px green;
+}
+.lose {
+  border: 4px solid red;
+  box-shadow: 0 0 10px firebrick;
+}
+.draw {
+  border: 4px solid grey;
+  box-shadow: 0 0 10px darkslategrey;
+}
