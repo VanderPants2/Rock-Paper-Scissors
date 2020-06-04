@@ -32,7 +32,7 @@ function win(user, computer) {
   document.getElementById(convertToWord(user)).classList.add("win");
   setTimeout(function () {
     document.getElementById(convertToWord(user)).classList.remove("win");
-  }, 1000);
+  }, 300);
 }
 
 function lose(user, computer) {
@@ -44,7 +44,7 @@ function lose(user, computer) {
   document.getElementById(convertToWord(user)).classList.add("lose");
   setTimeout(function () {
     document.getElementById(convertToWord(user)).classList.remove("lose");
-  }, 1000);
+  }, 300);
 }
 
 function draw(user, computer) {
@@ -53,7 +53,7 @@ function draw(user, computer) {
   document.getElementById(convertToWord(user)).classList.add("draw");
   setTimeout(function () {
     document.getElementById(convertToWord(user)).classList.remove("draw");
-  }, 1000);
+  }, 300);
 }
 
 function game(userChoice) {
